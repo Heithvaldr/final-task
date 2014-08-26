@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>final_task</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="homepage" href="#">home</a>
+            <a class="calculatorpage" href="#">Calculator</a>
+            <a class="graphicspage" href="graphics.html">Graphics</a>
+            <a class="competitorspage" href="competitors.html">Competitors</a>
+        </nav>
+    </header>
+    
+    <section>
+       <h1>
+            Xarelto &copy; Estimator of Resources Saved
+       </h1>
+       <div class="calc_column left_column">
+        <div>
+            <div>
+                <input type="text" placeholder="Enter number of DVT patients here">
+                <button>calculate</button>
+                <button>?</button>
+            </div>
+            <p>
+                Assumptions to estimate calculations: proportion of patients with DVT contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 7.5% <br> <b>Number of patients with DVT - 7.5% = <font color="#e31e86">[A]</font></b> Total number of DVT patients eligible for dual LMWH/VKA or Xarelto
+            </p>
+        </div>
+        <ul>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>Injections avoided 3-7</h2>
+                    <input type="text" placeholder="B+C">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>INR clinic visit avoided 3,7,8</h2>
+                    <input type="text" placeholder="E">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>Nurse visit avoided 9</h2>
+                    <input type="text" placeholder="G">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>Hospital bed days saved 10</h2>
+                    <input type="text" placeholder="H">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+        </ul>
+       </div>
+       <div class="calc_column right_column">
+        <div>
+            <div>
+                <input type="text" placeholder="Enter number of DVT patients here">
+                <button>calculate</button>
+                <button>?</button>
+            </div>
+            <p>
+                Assumptions to estimate calculations: proportion of patients with PE contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 15% <br> <b>Number of patients with PE - 15% = <font color="#e31e86">[A]</font></b> Total number of PE patients eligible for dual LMWH/VKA or Xarelto
+            </p>
+        </div>
+        <ul>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>Injections avoided 3-6,11</h2>
+                    <input type="text" placeholder="B+C">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>INR clinic visit avoided 3,8,11</h2>
+                    <input type="text" placeholder="I">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+            <li class="variable">
+                <div class="variable_name">
+                    <h2>Hospital bed days saved 10</h2>
+                    <input type="text" placeholder="J">
+                </div>
+                <div class="variable_description"></div>
+            </li>
+        </ul> 
+       </div>
+    </section>
+    
+    <footer>
+        
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
