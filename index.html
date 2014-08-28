@@ -18,90 +18,117 @@
     </header>
     
     <section>
-       <h1>
+        <h1>
             Xarelto &copy; Estimator of Resources Saved
-       </h1>
-       <div class="calc_column left_column">
-        <div>
+        </h1>
+        <div class="calc_column left_column">
             <div>
-                <input type="text" placeholder="Enter number of DVT patients here">
-                <button>calculate</button>
-                <button>?</button>
+                <div>
+                    <input type="text" placeholder="Enter number of DVT patients here">
+                    <button>calculate</button>
+                    <button>?</button>
+                </div>
+                <p>
+                    Assumptions to estimate calculations: proportion of patients with DVT contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 7.5% <br> <b>Number of patients with DVT - 7.5% = <font color="#e31e86">[A]</font></b> Total number of DVT patients eligible for dual LMWH/VKA or Xarelto
+                </p>
             </div>
-            <p>
-                Assumptions to estimate calculations: proportion of patients with DVT contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 7.5% <br> <b>Number of patients with DVT - 7.5% = <font color="#e31e86">[A]</font></b> Total number of DVT patients eligible for dual LMWH/VKA or Xarelto
-            </p>
+            <ul>
+                <li class="variable">
+                    <form class="variable_name">
+                        <h2>Injections avoided 3-7</h2>
+                        <input type="text" placeholder="B+C">
+                    </form>
+                    <div class="variable_description"></div>
+                </li>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>INR clinic visit avoided 3,7,8</h2>
+                        <input type="text" placeholder="E">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>Nurse visit avoided 9</h2>
+                        <input type="text" placeholder="G">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>Hospital bed days saved 10</h2>
+                        <input type="text" placeholder="H">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>Injections avoided 3-7</h2>
-                    <input type="text" placeholder="B+C">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>INR clinic visit avoided 3,7,8</h2>
-                    <input type="text" placeholder="E">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>Nurse visit avoided 9</h2>
-                    <input type="text" placeholder="G">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>Hospital bed days saved 10</h2>
-                    <input type="text" placeholder="H">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-        </ul>
-       </div>
-       <div class="calc_column right_column">
-        <div>
+        <div class="calc_column right_column">
             <div>
-                <input type="text" placeholder="Enter number of DVT patients here">
-                <button>calculate</button>
-                <button>?</button>
+                <div>
+                    <input type="text" placeholder="Enter number of DVT patients here">
+                    <button>calculate</button>
+                    <button>?</button>
+                </div>
+                <p>
+                    Assumptions to estimate calculations: proportion of patients with PE contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 15% <br> <b>Number of patients with PE - 15% = <font color="#e31e86">[A]</font></b> Total number of PE patients eligible for dual LMWH/VKA or Xarelto
+                </p>
             </div>
-            <p>
-                Assumptions to estimate calculations: proportion of patients with PE contraindicated for Xarelto or MLWH/VKA<sup><small>1,2</small></sup> = 15% <br> <b>Number of patients with PE - 15% = <font color="#e31e86">[A]</font></b> Total number of PE patients eligible for dual LMWH/VKA or Xarelto
-            </p>
+            <ul>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>Injections avoided 3-6,11</h2>
+                        <input type="text" placeholder="B+C">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>INR clinic visit avoided 3,8,11</h2>
+                        <input type="text" placeholder="I">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+                <li class="variable">
+                    <div class="variable_name">
+                        <h2>Hospital bed days saved 10</h2>
+                        <input type="text" placeholder="J">
+                    </div>
+                    <div class="variable_description"></div>
+                </li>
+            </ul> 
         </div>
-        <ul>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>Injections avoided 3-6,11</h2>
-                    <input type="text" placeholder="B+C">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>INR clinic visit avoided 3,8,11</h2>
-                    <input type="text" placeholder="I">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-            <li class="variable">
-                <div class="variable_name">
-                    <h2>Hospital bed days saved 10</h2>
-                    <input type="text" placeholder="J">
-                </div>
-                <div class="variable_description"></div>
-            </li>
-        </ul> 
+        <div class="calculator_legend">
+            <p class="calculator_legend_header">Combined DVT + PE Resources Saved</p>
+            <ul>
+                <li>
+                    <p>
+                        Injections avoided<sup><small>3-7,11</small></sup> <br> <font color="#e31e86">[DVT + PE]</font>
+                    </p>    
+                </li>
+                <li>
+                    <p>
+                        INR clinic visits avoided<sup><small>3,7,8,11</small></sup> <br> <font color="#e31e86">[DVT + PE]</font>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Nurse visits avoided<sup><small>9</small></sup> <br> <font color="#e31e86">[DVT]</font>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Hospital bed days saved<sup><small>10</small></sup> <br> <font color="#e31e86">[DVT + PE]</font>
+                    </p>
+                </li>
+            </ul>
        </div>
     </section>
     
     <footer>
-        
+        <h6>
+            Numbers provided are based on general epidemiological research and on clinical trial expiriance from the Phase III programme with Xalerto. Healthcare practice may be different in your country (both before and after introduction of Xarelto), and thus the estimation may not reflect your country's perspective. <br> Actual costs are not included.
+        </h6>    
     </footer>
 </body>
 <script src="script.js"></script>
