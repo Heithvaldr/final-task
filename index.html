@@ -22,7 +22,7 @@
             Xarelto &copy; Estimator of Resources Saved
         </h1>
         <div class="calc_column left_column">
-            <div>
+            <div class="calc_column_header">
                 <div>
                     <input type="text" placeholder="Enter number of DVT patients here">
                     <button>calculate</button>
@@ -34,37 +34,69 @@
             </div>
             <ul>
                 <li class="variable">
-                    <form class="variable_name">
+                    <div class="variable_name">
                         <h2>Injections avoided 3-7</h2>
-                        <input type="text" placeholder="B+C">
-                    </form>
-                    <div class="variable_description"></div>
+                        <div class="formulas">
+                            <p>
+                                [B+C]
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            Injections avoided = number of LMWH injections recived by cancer patients with DVT + LMWH injections recived by DVT patients without cancer
+                        </p>
+                    </div>
                 </li>
                 <li class="variable">
                     <div class="variable_name">
                         <h2>INR clinic visit avoided 3,7,8</h2>
-                        <input type="text" placeholder="E">
+                        <div class="formulas">
+                            <p>
+                                [E]
+                            </p>
+                        </div>
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            INR clinic visits avoided = number of DVT patients eligible for VKA treatment &#215 number of INR monitoring visits per patient
+                        </p>
+                    </div>
                 </li>
                 <li class="variable">
                     <div class="variable_name">
                         <h2>Nurse visit avoided 9</h2>
-                        <input type="text" placeholder="G">
+                        <div class="formulas">    
+                            <p>[G]</p>
+                        </div>    
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            Nurse assistance visits avoided = number of non-cancer DVT patients eligible for initial LMWH treatment &#215 proportion of these patients treated by nurses in their own homes &#215 mean number of LMWH injections administrated
+                        </p>
+                    </div>
                 </li>
                 <li class="variable">
                     <div class="variable_name">
                         <h2>Hospital bed days saved 10</h2>
-                        <input type="text" placeholder="H">
+                        <div class="formulas">
+                            <p>[H]</p>
+                        </div>
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            Hospital bed days saved = number of eligible DVT patients &#215 proportion of DVT patients hospitalised &#215 number of hospital bed days saved per DVT patient treated with Xarelto 
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
         <div class="calc_column right_column">
-            <div>
+            <div class="calc_column_header">
                 <div>
                     <input type="text" placeholder="Enter number of DVT patients here">
                     <button>calculate</button>
@@ -78,23 +110,44 @@
                 <li class="variable">
                     <div class="variable_name">
                         <h2>Injections avoided 3-6,11</h2>
-                        <input type="text" placeholder="B+C">
+                        <div class="formulas">
+                            <p>[B+C]</p>
+                        </div>
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            Injections avoided = number of LMWH injections recived by cancer patients with PE + LMWH injections recived by PE patients without cancer
+                        </p>
+                    </div>
                 </li>
                 <li class="variable">
                     <div class="variable_name">
                         <h2>INR clinic visit avoided 3,8,11</h2>
-                        <input type="text" placeholder="I">
+                        <div class="formulas">
+                            <p>[I]</p>
+                        </div>    
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            INR clinic visits avoided = number of PE patients eligible for VKA treatment &#215 number of INR monitoring visits per patient
+                        </p>
+                    </div>
                 </li>
                 <li class="variable">
                     <div class="variable_name">
                         <h2>Hospital bed days saved 10</h2>
-                        <input type="text" placeholder="J">
+                        <div class="formulas">
+                            <p>[J]</p>
+                        </div>    
                     </div>
-                    <div class="variable_description"></div>
+                    <div class="variable_description">
+                        <button class="plus_button">+</button>
+                        <p>
+                            Hospital bed days saved = number of eligible PE patients &#215 proportion of PE patients hospitalised &#215 number of hospital bed days saved per PE patient treated with Xarelto
+                        </p>
+                    </div>
                 </li>
             </ul> 
         </div>
