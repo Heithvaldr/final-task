@@ -2,6 +2,10 @@
     font-family: FrutigerLTStd-Black;
     src: url(fonts/FrutigerLTStd-Black.otf);
 }
+@font-face {
+    font-family: FrutigerLTStd-LightCn;
+    src: url(fonts/FrutigerLTStd-LightCn.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +33,17 @@ h1 {
     font-family: FrutigerLTStd-Black, sans-serif;
     font-weight: bold;
     color: #432171;
-    margin: 26px 0 35px 246px;
+    text-align: center;
+    margin: 26px 0 35px 0;
+}
+h2 {
+    background-color: #c1c0c0;
+    /* width: 100%; */
+    font-size: 16px;
+    font-family: FrutigerLTStd-Black,sans-serif;
+    color: white;
+    float: left;
+    margin: 4px 0px 0px 14px;
 }
 .calc_column {
     /* width: 37.01%;*/
@@ -124,7 +138,6 @@ h1 {
     background-image: linear-gradient(to top, #9c9b9c 0%, #ffffff 100%);
 }
 .calc_column_header p {
-    width: 100%;
     height: 54px;
     background-image: -webkit-gradient(
 	linear,
@@ -140,7 +153,8 @@ h1 {
     background-image: linear-gradient(to top, #ffffff 0%, #e8e8e8 100%);
     color: #7c7a7b;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 9px;
+    padding: 4px 14px 0px 14px;
 }
 .left_column {
     float: left;
@@ -244,15 +258,6 @@ h1 {
     background-image: -ms-linear-gradient(top, #ABB2B8 0%, #DCDFE1 100%);
     background-image: linear-gradient(to top, #ABB2B8 0%, #DCDFE1 100%);
 }
-h2 {
-    background-color: #c1c0c0;
-    /* width: 100%; */
-    font-size: 16px;
-    font-family: FrutigerLTStd-Black,sans-serif;
-    color: white;
-    float: left;
-    margin: 4px 0px 0px 14px;
-}
 .calculator_legend { 
     margin-top: 462px;
     margin-left: 105px;
@@ -263,25 +268,79 @@ h2 {
     margin-left: 10.25%; */
 }
 .calculator_legend_header {
-    /* height: 4.43%; */
-    height: 34px;
+    font-size: 16px;
+    font-family: FrutigerLTStd-Black,sans-serif;
+    color: white;
     background-color: #502d80;
+    padding: 8px 0px 0px 14px;
+    height: 26px;
+}
+.calculator_legend ul {
+    width: 808px;
+    height: 54px;
+    text-align: justify;
 }
 .calculator_legend li {
-    height: 54px;
-    width: 192px;
-    display: inline-block;
+    font-family: FrutigerLTStd-Black,sans-serif;
+    font-size: 14px;
+    color: #7c7a7b;
     list-style: none;
+    background-color:rgba(255, 255, 255, 0.5);    
+    margin-right: 7px;
+    display: inline-block;
+    padding: 8px 0px 0px 10px;
+    height: 46px;
+}
+.calculator_legend li:last-child {
+    margin-right: 0px;
 }
 section {
     height: 100%;
 }
 footer {
+    font-family: FrutigerLTStd-LightCn, sans-serif;
     font-size: 12px;
-    margin-top: 42px;
-    margin-left: 105px;
-    width: 696px;
-    height: 27px;
+    margin: 38px 0px 36px 105px;
     /* width: 68.36%;
     margin-left: 10.25%;*/
 }
+.patient_image {
+    height: 87px;
+    width: 98px;
+    background-image: url(images/patient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.graph {
+   width: 593px;
+   height: 357px;
+   border-color: #4a2278;
+   border-style: solid;
+   border-width: 2px;
+   -webkit-border-bottom-left-radius: 40px;
+   -webkit-border-top-right-radius: 40px;
+   -moz-border-radius-bottomleft: 40px;
+   -moz-border-radius-topright: 40px;
+   border-radius: 0 40px 0 40px;
+}
+.graphics_colomns {
+    margin: 0 auto;
+}
+.graph_colomn {
+    float: left;
+    height: 200px;
+    width: 135px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-radius: 10px 10px 0 0;
+}
+.left_col {
+    background-color: #1785a3;
+}
+.right_col {
+    background-color: #e3007c;
+}
+    
