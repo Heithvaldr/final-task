@@ -28,6 +28,13 @@ header {
     box-shadow: 0px 2px 2px 0px #e2e2e2;
     background-color: #eeeeee; 
 }
+nav {
+    height: 48px;
+}
+nav a {
+    border-left: 1px solid #cbcbcb;
+    height: 48px;
+}
 h1 {
     font-size: 27px;
     font-family: FrutigerLTStd-Black, sans-serif;
@@ -587,13 +594,21 @@ footer {
 .upper_sq {
     background-color: #ff0090;
 }
-.left_compet_on_chains.animate-element {
+.competitors.left-animation .left_compet_on_chains {
     -webkit-animation: compet_movement 1s;
     animation: compet_movement 1s;
 }
-.right_compet_on_chains.animate-element {
+.competitors.left-animation .right_compet_on_chains {
+    -webkit-animation: other_compet_movement 1s;
+    animation: other_compet_movement 1s;
+}
+.competitors.right-animation .right_compet_on_chains {
     -webkit-animation: compet_movement 1s;
     animation: compet_movement 1s;
+}
+.competitors.right-animation .left_compet_on_chains {
+    -webkit-animation: other_compet_movement 1s;
+    animation: other_compet_movement 1s;
 }
 @-webkit-keyframes compet_movement {
     from {-webkit-transform: translateY(0px);}
@@ -602,6 +617,38 @@ footer {
 @keyframes compet_movement {
     from {transform: translateY(0px);}
     to {transform: translateY(20px);}
+}
+@-webkit-keyframes other_compet_movement {
+    from {-webkit-transform: translateY(0px);}
+    to {-webkit-transform: translateY(-20px);}
+}
+@keyframes other_compet_movement {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-20px);}
+}
+.competitors.left-rotation .axis {
+    -webkit-animation: axis_left_rotation 1s;
+    animation: axis_left_rotation 1s;
+}
+.competitors.right-rotation .axis {
+    -webkit-animation: axis_right_rotation 1s;
+    animation: axis_right_rotation 1s;
+}
+@-webkit-keyframes axis_left_rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-11deg);}
+}
+@keyframes axis_left_rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-11deg);}
+}
+@-webkit-keyframes axis_right_rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(11deg);}
+}
+@keyframes axis_right_rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(11deg);}
 }
 
 
