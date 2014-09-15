@@ -10,6 +10,9 @@
     margin: 0;
     padding: 0;
 }
+
+/*calculator*/
+
 body {
     width: 1024px;
     margin: auto;
@@ -302,37 +305,81 @@ h2 {
     margin-right: 0px;
 }
 section {
-    height: 100%;
+    height: 587px;
 }
-footer {
-    font-family: FrutigerLTStd-LightCn, sans-serif;
-    font-size: 12px;
-    margin: 38px 0px 36px 105px;
-    /* width: 68.36%;
-    margin-left: 10.25%;*/
+
+/*graphics*/
+
+.patients {
+    margin: 123px 8px 0 122px;
+    position: relative;
+    width: 90px;
+    height: 18px;
+    float: left;
 }
-.patient_image {
-    height: 87px;
-    width: 98px;
-    background-image: url(images/patient.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.patients p {
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 14px;
 }
 .graph {
-   width: 593px;
-   height: 357px;
-   border-color: #4a2278;
-   border-style: solid;
-   border-width: 2px;
-   -webkit-border-bottom-left-radius: 40px;
-   -webkit-border-top-right-radius: 40px;
-   -moz-border-radius-bottomleft: 40px;
-   -moz-border-radius-topright: 40px;
-   border-radius: 0 40px 0 40px;
+    margin: 60px 0 0 0;
+    position: relative;
+    float: left;
+    width: 593px;
+    height: 357px;
+    border-color: #4a2278;
+    border-style: solid;
+    border-width: 2px;
+    -webkit-border-bottom-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -moz-border-radius-topright: 40px;
+    border-radius: 0 40px 0 40px;
+   
+}
+.left_grade {
+    width: 50px;
+    height: 100%;
+    float: left;
+    background-color: #dad9da;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    border-radius: 0 0 0 38px;
+}
+.left_grade ul {
+    margin-top: 37px;
+}
+.left_grade li{
+    text-align: right;
+    margin-top: 18px;
+    margin-right: 8px;
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 13px;
+    list-style: none;
+}
+.grades{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 11px;
+}
+.grade {
+    height: 1px;
+    width: 10px;
+    background-color: black;
+    list-style: none;
+    margin-top: 32px;
+}
+.grade_line_blue {
+    position: absolute;
+    height: 5px;
+    width: 543px;
+    background-color: #4a2278;
+    margin: 310px 0 0 50px;
 }
 .graphics_colomns {
-    margin: 0 auto;
+    margin-left: 180px;
+    margin-top: 110px;
+    height: 200px;
 }
 .graph_colomn {
     float: left;
@@ -343,6 +390,9 @@ footer {
     -moz-border-radius-topleft: 10px;
     -moz-border-radius-topright: 10px;
     border-radius: 10px 10px 0 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
 }
 .left_col {
     background-color: #1785a3;
@@ -350,6 +400,40 @@ footer {
 .right_col {
     background-color: #e3007c;
 }
+.col_text {
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+}
+.upper_text {
+    margin-top: 5px;
+}
+.grad_upper_text{
+    position: absolute;
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 25px 0 0 265px;
+}
+.patient_image {
+    position: relative;
+    float: left;
+    height: 87px;
+    width: 98px;
+    background-image: url(images/patient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 333px 0 0 0;
+}
+
+
+/*competitors*/
+
 .competitors_general {
     position: relative;
     z-index: 0;
@@ -650,7 +734,14 @@ footer {
     from {transform: rotate(0deg);}
     to {transform: rotate(11deg);}
 }
-
+footer {
+    clear: both;
+    font-family: FrutigerLTStd-LightCn, sans-serif;
+    font-size: 12px;
+    margin: 38px 0px 36px 105px;
+    /* width: 68.36%;
+    margin-left: 10.25%;*/
+}
 
 
 
