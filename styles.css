@@ -6,12 +6,16 @@
     font-family: FrutigerLTStd-LightCn;
     src: url(fonts/FrutigerLTStd-LightCn.otf);
 }
+@font-face {
+    font-family: FrutigerLTStd-BoldCn;
+    src: url(fonts/FrutigerLTStd-BoldCn.otf);
+}
 * {
     margin: 0;
     padding: 0;
 }
 
-/*calculator*/
+/*common*/
 
 body {
     width: 1024px;
@@ -32,11 +36,29 @@ header {
     background-color: #eeeeee; 
 }
 nav {
+    font-size: 16px;
+    font-family: FrutigerLTStd-BoldCn, sans-serif;
+    color: black;
     height: 48px;
 }
-nav a {
+nav div {
+    float: left;
+    text-align: center;
+    text-decoration: none;
     border-left: 1px solid #cbcbcb;
     height: 48px;
+    width: 318px;
+}
+nav div a {
+    position: relative;
+    top: 30%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    text-decoration: none;
+}
+.homepage {
+    width: 64px;
 }
 h1 {
     font-size: 27px;
@@ -55,6 +77,9 @@ h2 {
     float: left;
     margin: 4px 0px 0px 14px;
 }
+
+/*calculator*/
+
 .calc_column {
     /* width: 37.01%;*/
     width: 377px;
@@ -305,7 +330,7 @@ h2 {
     margin-right: 0px;
 }
 section {
-    height: 587px;
+    height: 100%;
 }
 
 /*graphics*/
@@ -419,6 +444,20 @@ section {
     text-align: center;
     margin: 25px 0 0 265px;
 }
+.grad_zero {
+    position: absolute;
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0 0 45px;
+}
+.grad_lower_text {
+    position: absolute;
+    font-family: FrutigerLTStd-Black, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0 0 290px;
+}
 .patient_image {
     position: relative;
     float: left;
@@ -428,7 +467,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 333px 0 0 0;
+    margin: 333px 0 38px 0;
 }
 
 
